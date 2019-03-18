@@ -5,7 +5,64 @@
 @import 'reset/form';
 @import 'reset/buttons';
 @import 'reset/tables';
+@import 'base/animation';
 @import 'base/colors';
 @import 'base/defaults';
 @import 'components/header';
 @import 'components/footer';
+
+#net-total-container {
+    h4 {
+        margin: 8px 0;
+        text-align: center;
+    }
+}
+
+#output-three {
+    display: flex;
+    padding: 0 8px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.tradingCards {
+    display: block;
+    margin: 16px 8px;
+    text-align: center;
+    border: solid 2px #333;
+    max-width: 250px;
+
+    h2 {
+        margin: 0;
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    .insideCardList {
+        margin: 8px 0 32px;
+        padding: 0 16px;
+        list-style: none;
+        text-align: left;
+
+        li {
+            display: flex;
+
+            label {
+                display: flex;
+            }
+
+            span {
+                display: flex;
+                margin-left: auto;
+            }
+        }
+    }
+}
